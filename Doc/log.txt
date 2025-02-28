@@ -1,0 +1,44 @@
+root@DESKTOP-4S9CU1E:~/train-deepseek-r1# python main.py
+Vocabulary size: 151665
+Model max length: 131072
+Pad token: <|endoftext|>
+EOS token: <|im_end|>
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+Model parameters: 494,032,768
+Using device: cuda
+Test Input: how are you?
+Model Response: system
+You are Qwen, a helpful assistant.
+user
+how are you?
+assistant
+Hello! As an AI language model, I don't have feelings like humans do, but I'm here to help answer any questions or provide information to the best of my knowledge. How can I assist you today?
+Train set size: 72441
+Test set size: 99
+
+Validating train split:
+✓ All required fields present
+✓ Prompt format is correct
+
+Validating test split:
+✓ All required fields present
+✓ Prompt format is correct
+/usr/local/lib/python3.10/dist-packages/transformers/training_args.py:1594: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/transformers/training_args.py:1594: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/transformers/training_args.py:2077: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+  0%|                                                                                                                                                                                                     | 0/36220 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+        - Avoid using `tokenizers` before the fork if possible
+        - Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+        - Avoid using `tokenizers` before the fork if possible
+        - Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:87: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+  0%|                                                                                                                                                                                         | 2/36220 [00:53<291:47:07, 29.00s/it]
+
