@@ -55,6 +55,7 @@ train-deepseek-r1/
 - [Rejection Sampling](#rejection-sampling)
 - [SFT Stage 2 Training](#sft-stage-2-training)
 - [Distillation](#distillation)
+- [Citation](#citation)
 
 
 
@@ -878,6 +879,7 @@ training_args = TrainingArguments(
     push_to_hub=False,             # Whether to push the final model to Hugging Face Hub
     gradient_checkpointing=True,   # Enable gradient checkpointing
     report_to="none",              # Reporting to no one
+    remove_unused_columns=False,   # Do not remove unused columns from the dataset
 )
 ```
 
