@@ -55,6 +55,7 @@ train-deepseek-r1/
 - [Rejection Sampling](#rejection-sampling)
 - [SFT Stage 2 Training](#sft-stage-2-training)
 - [Distillation](#distillation)
+- [Citation](#citation)
 
 
 
@@ -878,6 +879,7 @@ training_args = TrainingArguments(
     push_to_hub=False,             # Whether to push the final model to Hugging Face Hub
     gradient_checkpointing=True,   # Enable gradient checkpointing
     report_to="none",              # Reporting to no one
+    remove_unused_columns=False,   # Do not remove unused columns from the dataset
 )
 ```
 
@@ -1541,3 +1543,17 @@ Distillation takes the knowledge of a large, powerful “teacher” model (DeepS
 Smaller models are then trained (SFT) to mimic these outputs. This results in smaller, faster models that retain a significant portion of DeepSeek R1’s reasoning abilities, making them more practical for wider use.
 
 Happy reading!
+
+## Citation
+
+This project was completed with the help of the OpenR1 implementation from Hugging Face.
+
+```
+@misc{openr1,
+    title = {Open R1: A fully open reproduction of DeepSeek-R1},
+    url = {https://github.com/huggingface/open-r1},
+    author = {Hugging Face},
+    month = {January},
+    year = {2025}
+}
+```
